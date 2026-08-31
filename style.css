@@ -1119,3 +1119,19 @@ h1.titre-site{
 .pdf-outils .pdf:hover{
     color:#6E3AA6;
 	}
+	.titre-accueil {
+    margin-top: 60px;
+    margin-bottom: 12px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sous-titre-accueil {
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #5f6b75;
+    text-align: center;
+}
