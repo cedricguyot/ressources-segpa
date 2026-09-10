@@ -1135,3 +1135,11 @@ h1.titre-site{
     color: #5f6b75;
     text-align: center;
 }
+.sous-titre-page {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #C62828;
+  margin-top: -38px;
+  margin-bottom: 45px;
+}
