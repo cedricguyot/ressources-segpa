@@ -22,6 +22,7 @@
 <link rel="canonical" href="https://profdesegpa.fr/automatismes.html"/>
 
 <link href="style.css" rel="stylesheet"/>
+<link href="commentaires.css" rel="stylesheet"/>
 
 </head>
 
@@ -129,6 +130,53 @@ target="_blank">
 </a>
 
 </div>
+
+<!-- Espace de commentaires -->
+
+<section class="espace-commentaires">
+
+  <details>
+
+    <summary>
+      Si vous avez une remarque, une suggestion ou si vous repérez
+      une erreur dans un document, vous pouvez
+      <span class="lien-commentaire">me laisser un message</span>.
+    </summary>
+
+    <form class="formulaire-commentaire">
+
+      <input
+        type="text"
+        name="pseudo"
+        placeholder="Votre prénom ou pseudo"
+        required
+      >
+
+      <textarea
+        name="message"
+        placeholder="Votre message..."
+        rows="5"
+        required
+      ></textarea>
+	  
+	  <div class="bas-formulaire">
+
+  <p class="mention-moderation">
+    Les messages sont relus avant publication.
+  </p>
+
+  <button type="submit">
+    Envoyer
+  </button>
+
+</div>
+
+    </form>
+
+  </details>
+
+</section>
+<script src="commentaires.js" defer></script>
 
 </body>
 </html>

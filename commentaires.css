@@ -1,0 +1,270 @@
+
+/* =========================================
+   PROF DE SEGPA — ESPACE COMMENTAIRES
+   ========================================= */
+
+/* Zone générale sous les PDF */
+
+.espace-commentaires {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Invitation à laisser un message */
+
+.espace-commentaires summary {
+    display: inline-block;
+    color: #5f6b75;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    list-style: none;
+    transition: color 0.2s ease;
+}
+
+/* Supprimer le triangle par défaut */
+
+.espace-commentaires summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Formulaire */
+
+.formulaire-commentaire {
+    width: 100%;
+    max-width: 520px;
+    margin: 28px auto 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    text-align: left;
+}
+
+/* Champ prénom et zone de message */
+
+.formulaire-commentaire input,
+.formulaire-commentaire textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid #CBD5E1;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+    color: #303846;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+/* Champ prénom */
+
+.formulaire-commentaire input {
+    min-height: 45px;
+}
+
+/* Zone de rédaction */
+
+.formulaire-commentaire textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Lorsqu'un champ est sélectionné */
+
+.formulaire-commentaire input:focus,
+.formulaire-commentaire textarea:focus {
+    border-color: #1850A5;
+}
+
+/* Bouton d'envoi */
+
+.formulaire-commentaire button {
+    align-self: flex-end;
+
+    padding: 11px 22px;
+
+    background: #FFFFFF;
+    border: 1px solid #1850A5;
+    border-radius: 8px;
+
+    color: #1850A5;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+/* Survol du bouton */
+
+.formulaire-commentaire button:hover {
+    background: #1850A5;
+    color: #FFFFFF;
+}
+
+/* Navigation au clavier */
+
+.espace-commentaires summary:focus-visible,
+.formulaire-commentaire button:focus-visible {
+    outline: 2px solid #1850A5;
+    outline-offset: 4px;
+}
+
+/* Adaptation aux petits écrans */
+
+@media (max-width: 600px) {
+
+    .espace-commentaires {
+        width: calc(100% - 32px);
+        margin-bottom: 50px;
+    }
+
+    .formulaire-commentaire {
+        max-width: 100%;
+    }
+
+    .formulaire-commentaire button {
+        align-self: stretch;
+    }
+	}
+	
+/* Phrase cliquable */
+
+.espace-commentaires summary {
+    display: inline-block;
+    color: #5f6b75;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Lien bleu sans soulignement */
+
+.espace-commentaires .lien-commentaire {
+    color: #1850A5;
+    text-decoration: none;
+}
+
+/* Agrandissement de toute la phrase au survol */
+
+.espace-commentaires summary:hover {
+    transform: scale(1.05);
+	
+}
+/* Mention et bouton sur une même ligne */
+
+.bas-formulaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.mention-moderation {
+    margin: 0;
+    color: #7A8696;
+    font-size: 12px;
+    text-align: left;
+}
+
+.formulaire-commentaire .bas-formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.formulaire-commentaire .bas-formulaire p {
+    margin: 0;
+}
+
+.formulaire-commentaire .bas-formulaire button {
+    align-self: center;
+}
+
+/* =========================================
+   COMMENTAIRES PUBLIÉS
+   ========================================= */
+
+.commentaires-publies {
+    width: calc(100% - 40px);
+    max-width: 700px;
+    margin: 130px auto 100px auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.commentaires-publies h2 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #5f6b75;
+    margin: 0 0 35px 0;
+}
+
+.commentaire {
+    padding: 22px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.commentaire-entete {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.commentaire-entete strong {
+    color: #36506C;
+    font-size: 14px;
+}
+
+.commentaire-entete span {
+    color: #8A939D;
+    font-size: 12px;
+}
+
+.commentaires-publies .commentaire-texte {
+    color: #5f6b75;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.reponse-commentaire {
+    margin: 20px 0 0 25px;
+    padding-left: 15px;
+    border-left: 2px solid #1850A5;
+}
+
+.reponse-commentaire strong {
+    color: #1850A5;
+    font-size: 13px;
+}
+
+.reponse-commentaire p {
+    color: #5f6b75;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 8px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .commentaires-publies {
+        margin-top: 80px;
+    }
+}
