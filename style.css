@@ -1104,11 +1104,11 @@ h1.titre-site{
     
 }
 
-/* Sciences */
-.sciences .pdf:hover{
-    color:#00ACC1;
-
+/* Physique-Chimie */
+.physique .pdf:hover {
+    color: #777777;
 }
+
 
 /* Géographie */
 .geographie .pdf:hover{
